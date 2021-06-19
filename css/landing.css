@@ -1,0 +1,49 @@
+@import url("global.css");
+
+.products {
+    min-height: 15rem;
+    max-height: 34.375rem;
+}
+
+
+.box-button{
+    background-color: #5BACC3;
+    font-size: 1.313rem;
+    font-weight: 400;
+    color: white;
+    border: none;
+}
+
+.text {
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+.prices {
+
+    color: #5BACC3;
+    font-weight: 400;
+}
+
+.section-discount{
+
+    min-width: fit-content;
+    max-width: 90%;
+    background-color: #393939;
+    color: white;
+    font-size: 2.813rem;
+    text-align: center;
+}
+
+.text-discount {
+    
+    font-weight: 400;
+    margin: 0;
+}
+
+.span-text {
+
+    font-weight: 700;
+}
+
+
