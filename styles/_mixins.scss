@@ -1,0 +1,33 @@
+@import "../styles/_variables";
+
+@mixin icon-size {
+  min-width: 50px;
+  max-width: 120px;
+}
+
+
+@mixin button-style {
+  padding: $horizontalPadding;
+  min-width: 180px;
+  max-width: 80%;
+  color: $neutralColor-4;
+  background-color: $primaryColor-1;
+  border-width: 2px;
+  border-color: $neutralColor-1;
+}
+
+@mixin product-card {
+  padding: $horizontalPadding;
+  min-height: 440px;
+  max-height: 460px;
+  min-width: 330px;
+  max-width: 350px;
+  border-radius: 10px;
+  box-shadow: 0 5px 9px -1px rgba(0, 0, 0, 0.25);
+}
+
+@mixin products {
+  padding: $horizontalPadding;
+  min-height: 240px;
+  max-height: 550px;
+}

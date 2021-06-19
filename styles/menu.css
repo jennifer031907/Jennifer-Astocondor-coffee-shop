@@ -1,4 +1,67 @@
-@import url("global.css");
+.nav {
+  padding: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.title1 {
+  color: #393939;
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 3.75rem;
+}
+
+html {
+  color: #393939;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+.link {
+  font-size: 1.313rem;
+  font-weight: 400;
+  list-style: none;
+}
+
+body {
+  margin: 0;
+}
+
+.main-titles {
+  font-size: 3.75rem;
+  font-weight: 300;
+}
+
+.box-background {
+  background-color: #fff0ed;
+}
+
+.small-titles {
+  font-size: 2.063rem;
+  font-weight: 300;
+}
 
 .box-text {
   min-width: 17.5rem;
@@ -107,3 +170,4 @@ li {
 article:last-child {
   margin-bottom: 0;
 }
+/*# sourceMappingURL=menu.css.map */
