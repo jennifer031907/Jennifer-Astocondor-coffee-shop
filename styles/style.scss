@@ -1,5 +1,6 @@
 @import "../styles/_global";
 @import "../styles/_mixins";
+@import "../styles/_typography";
 
 .main-product {
     padding-bottom: 3%;
@@ -63,7 +64,6 @@ button{
             width: 100%;
             @include center;
             justify-content: space-between;
-            background-color: $primaryColor-2;
             box-sizing: border-box;
             
             & div {
@@ -95,7 +95,60 @@ button{
     }
 }
 
+.different {
+    padding: 5% 20px;
+    @include center;
+    justify-content: space-around;
+    background-color: $neutralColor-4;
+
+    &__text {
+        width: 40%;
+
+        & h2 {
+            @include heading;
+        }
+        
+        & p {
+            width: 85%;
+            @include paragraphText;
+        }
+        
+        &__icons {
+            margin: 4% 0;
+            width: 80%;
+            @include center;
+            justify-content: space-between;
+        }
+
+        & button {
+            margin-bottom: 10%;
+        }
+    }
+
+    &__image {
+        padding: $horizontalPadding;
+        width: 40%;
+        @include center;
+        
+        &__background {
+            min-width: 400px;
+            max-width: 500px;
+        }
+        
+        &__coldbrew {
+            position: absolute;
+            background-color: transparent;
+            z-index: 2;
+
+            &:hover {
+                animation: "spin" 2s linear infinite;
+            }
+        }
+    }
+}
+
 .icons {
+    height: 70px;
     @include icon-size;
 }
 
