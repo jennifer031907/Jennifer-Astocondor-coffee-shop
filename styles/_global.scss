@@ -1,4 +1,24 @@
 @import "../styles/_variables";
+@import "../styles/_typography";
+
+html {
+  color: $neutralColor-1;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+}
+
+header, section {
+  background-color: $primaryColor-2;
+}
+
+a {
+  text-decoration: none;
+  color: $neutralColor-1;
+}
 
 .nav {
   padding: $horizontalPadding;
@@ -9,49 +29,32 @@
   &__logo {
     display: flex;
     align-items: center;
+    
+    & h2 {
+      text-decoration: none;
+      @include heading;
+    }
   }
 
   &__links {
     display: flex;
 
-    & li {
-      @include heading-nav-footer;
+    &__item {
+      padding: $horizontalPadding;
+      @include navLink-button;
       list-style: none;
       
-      & a {
-        text-decoration: none;
-        color: red;
+      & a:hover {
+        color: $primaryColor-1;
       }
     }
 
   }
 }
 
-
-.title1 {
-  color: #393939;
-  text-decoration: none;
-  font-weight: 300;
-  font-size: 3.75rem;
-}
-
-html {
-  color: #393939;
-  font-family: "Open Sans", sans-serif;
-  font-size: 16px;
-}
-
-body {
-  margin: 0;
-}
-
 .main-titles {
   font-size: 3.75rem;
   font-weight: 300;
-}
-
-.box-background {
-  background-color: #fff0ed;
 }
 
 .small-titles {
