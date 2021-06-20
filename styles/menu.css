@@ -8,7 +8,7 @@ body {
   margin: 0;
 }
 
-header, section {
+header, .main-product {
   background-color: #FFF0ED;
 }
 
@@ -60,16 +60,6 @@ a {
 
 .nav__links__item a:hover {
   color: #5BACC3;
-}
-
-.main-titles {
-  font-size: 3.75rem;
-  font-weight: 300;
-}
-
-.small-titles {
-  font-size: 2.063rem;
-  font-weight: 300;
 }
 
 .box-text {

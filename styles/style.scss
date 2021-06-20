@@ -1,22 +1,30 @@
 @import "../styles/_global";
+@import "../styles/_mixins";
 
-.products {
-    min-height: 15rem;
-    max-height: 34.375rem;
+.main-product {
+    padding-bottom: 3%;
+    @include center;
+
+    &__text {
+        &__title {
+            margin: 0;
+            @include heading;
+        }
+        
+        &__paragraph {
+            width: 37%;
+            @include paragraphText;
+        }
+    }
+
+    &__image {
+        min-height: 15rem;
+        max-height: 34.375rem;
+    }
 }
 
-
-.box-button{
-    background-color: #5BACC3;
-    font-size: 1.313rem;
-    font-weight: 400;
-    color: white;
-    border: none;
-}
-
-.text {
-    font-size: 1.125rem;
-    font-weight: 400;
+.button{
+    @include button-style;
 }
 
 .prices {

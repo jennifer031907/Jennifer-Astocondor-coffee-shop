@@ -8,7 +8,7 @@ body {
   margin: 0;
 }
 
-header, section {
+header, .main-product {
   background-color: #FFF0ED;
 }
 
@@ -62,32 +62,59 @@ a {
   color: #5BACC3;
 }
 
-.main-titles {
-  font-size: 3.75rem;
+.main-product {
+  padding-bottom: 3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-product__text__title {
+  margin: 0;
+  font-size: 60px;
   font-weight: 300;
 }
 
-.small-titles {
-  font-size: 2.063rem;
-  font-weight: 300;
+.main-product__text__paragraph {
+  width: 37%;
+  font-size: 18px;
+  font-weight: 400;
 }
 
-.products {
+.main-product__image {
   min-height: 15rem;
   max-height: 34.375rem;
 }
 
-.box-button {
-  background-color: #5BACC3;
-  font-size: 1.313rem;
+.button {
+  margin-top: 2.5%;
+  padding: 1% 25px 2% 15px;
+  height: 45px;
+  min-width: 180px;
+  max-width: 80%;
+  color: #FFF;
+  font-size: 21px;
   font-weight: 400;
-  color: white;
+  background-color: #5BACC3;
   border: none;
+  cursor: pointer;
+  position: relative;
 }
 
-.text {
-  font-size: 1.125rem;
-  font-weight: 400;
+.button:after {
+  top: -5px;
+  left: -5px;
+  height: 45px;
+  width: 180px;
+  content: "";
+  outline: 2px solid #393939;
+  position: absolute;
 }
 
 .prices {
