@@ -6,13 +6,15 @@
     @include center;
 
     &__text {
+        width: 52%;
+
         &__title {
             margin: 0;
             @include heading;
         }
         
         &__paragraph {
-            width: 37%;
+            width: 41%;
             @include paragraphText;
         }
     }
@@ -23,18 +25,81 @@
     }
 }
 
-.button{
+button{
     @include button-style;
 }
 
-.prices {
+.our-products {
+    padding: 50px 20px 1px 20px;
+    background-color: $neutralColor-3;
+    
+    &__title {
+        margin-top: 0;
+        @include heading;
+        text-align: center;
+    }
+    
+    &__container {
+        @include center;
+        justify-content: space-evenly;
+    }
 
-    color: #5BACC3;
-    font-weight: 400;
+    &__card {
+        padding: 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        @include product-card;
+        box-sizing: border-box;
+
+        
+        &__image {
+            @include products;
+            padding: 30px 20px;
+        }  
+        
+        &__info {
+            padding: 26px 20px;
+            width: 100%;
+            @include center;
+            justify-content: space-between;
+            background-color: $primaryColor-2;
+            box-sizing: border-box;
+            
+            & div {
+                display: flex;
+                flex-direction: column;
+
+                & h3 {
+                    margin: 0;
+                    @include heading-nav-footer;
+                }
+                
+                & p {
+                    margin-top: 5px;
+                    @include paragraphText;
+                    color: $neutralColor-2
+                }
+            }
+            & p {
+                @include navLink-button;
+                font-weight: bolder;
+                color: $primaryColor-1;
+            }
+        }
+    }
+
+    & button {
+        margin: 4% auto 3% auto;
+        @include center;
+    }
+}
+
+.icons {
+    @include icon-size;
 }
 
 .section-discount{
-
     min-width: fit-content;
     max-width: 90%;
     background-color: #393939;
@@ -44,13 +109,11 @@
 }
 
 .text-discount {
-    
     font-weight: 400;
     margin: 0;
 }
 
 .span-text {
-
     font-weight: 700;
 }
 
