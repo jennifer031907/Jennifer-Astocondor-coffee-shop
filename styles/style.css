@@ -398,7 +398,7 @@ button:active {
 }
 
 .different__text__icons {
-  margin: 4% 0;
+  margin: 6% 0;
   width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -501,6 +501,7 @@ button:active {
 .footer {
   padding: 1% 20px 5% 20px;
   position: relative;
+  overflow: hidden;
 }
 
 .footer__background {
