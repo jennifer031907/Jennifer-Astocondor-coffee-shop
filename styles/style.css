@@ -178,12 +178,13 @@ button {
   border: none;
   cursor: pointer;
   position: relative;
+  padding: 0px 8px 3px 3px;
 }
 
 button:after {
   top: -5px;
   left: -5px;
-  height: 45px;
+  height: 42px;
   width: 180px;
   content: "";
   outline: 2px solid #393939;
@@ -204,6 +205,10 @@ button:active::after {
   -webkit-animation-direction: normal;
           animation-direction: normal;
   outline: none;
+}
+
+button:active {
+  padding: 1px 6px;
 }
 
 .main-product {
@@ -406,15 +411,6 @@ button:active::after {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-.different button {
-  margin-bottom: 10%;
-  padding: 1%;
-}
-
-.different button:active {
-  padding: 5% 1% 1% 1.3%;
 }
 
 .different__image {

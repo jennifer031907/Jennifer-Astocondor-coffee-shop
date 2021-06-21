@@ -5,6 +5,11 @@
 
 button {
     @include button-style;
+    padding: 0px 8px 3px 3px;
+
+    &:active {
+        padding: 1px 6px;
+    }
 }
 
 .main-product {
@@ -122,15 +127,6 @@ button {
             justify-content: space-between;
         }
 
-    }
-
-    & button {
-        margin-bottom: 10%;
-        padding: 1%;
-
-        &:active {
-            padding: 5% 1% 1% 1.3%;
-        }
     }
 
     &__image {
