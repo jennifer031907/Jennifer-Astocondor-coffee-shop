@@ -230,10 +230,17 @@ li {
           align-items: center;
   background-color: #393939;
   color: #FFF;
+  position: relative;
 }
 
 .main-image__title::after {
+  top: -20px;
+  left: -20px;
+  height: 195px;
+  width: 280px;
+  content: "";
   outline: 5px solid #5BACC3;
+  position: absolute;
 }
 
 .menu-navigation__list {
