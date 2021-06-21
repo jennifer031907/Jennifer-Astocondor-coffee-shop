@@ -1,5 +1,6 @@
 @import "../styles/_variables";
 @import "../styles/_typography";
+@import "../styles/_mixins";
 
 html {
   color: $neutralColor-1;
@@ -11,7 +12,7 @@ body {
   margin: 0;
 }
 
-header, .main-product, .our-products__card__info {
+header, .main-product, .our-products__card__info, .footer, .hot-drinks {
   background-color: $primaryColor-2;
 }
 
@@ -34,6 +35,10 @@ a {
       text-decoration: none;
       @include heading;
     }
+
+    & a img {
+      @include logoSize;
+    }
   }
 
   &__links {
@@ -50,4 +55,9 @@ a {
     }
 
   }
+}
+
+.icons {
+  height: 70px;
+  @include icon-size;
 }

@@ -1,6 +1,7 @@
 @import "../styles/_global";
 @import "../styles/_mixins";
 @import "../styles/_typography";
+@import "../styles/_variables";
 
 .main-product {
     padding-bottom: 3%;
@@ -51,6 +52,7 @@ button{
         align-items: center;
         flex-direction: column;
         @include product-card;
+        background-color: $neutralColor-4;
         box-sizing: border-box;
 
         
@@ -147,27 +149,71 @@ button{
     }
 }
 
-.icons {
-    height: 70px;
-    @include icon-size;
-}
-
-.section-discount{
+.discount {
+    margin: 5% auto 10% auto;
+    height: 100px;
     min-width: fit-content;
     max-width: 90%;
-    background-color: #393939;
-    color: white;
-    font-size: 2.813rem;
     text-align: center;
+    @include center;
+    background-color: $neutralColor-1;
+    
+    &__paragraph {
+        margin: 0;
+        color: $neutralColor-4;
+        font-size: 2.813rem;
+        font-weight: 400;
+        
+        &__span {
+            font-weight: 700;
+        }
+    }
 }
 
-.text-discount {
-    font-weight: 400;
-    margin: 0;
-}
-
-.span-text {
-    font-weight: 700;
-}
-
-
+.footer {
+    padding: 1% 20px 5% 20px;
+    position: relative;
+    
+    &__background {
+      opacity: 25%;
+      
+      &__left {
+        top: 5%;
+        left: -2%;
+        @include logoSize;
+        position: absolute;
+      }
+  
+      &__right {
+        right: -3%;
+        bottom: 19%;
+        @include logoSize;
+        position: absolute;
+      }
+    }
+  
+    &__container {
+      @include center;
+      justify-content: space-evenly;
+  
+      &__textBlock {
+  
+        & h3 {
+          @include heading-nav-footer;
+        }
+  
+        & p {
+          margin: 1% 0 0 0;
+          @include paragraphText;
+  
+          & span {
+            font-weight: bolder;
+          }
+        }
+  
+        & img {
+          height: 50px;
+        }
+      }
+    }
+  }
