@@ -38,12 +38,15 @@ li {
   background-size: cover;
 
   &__title {
+    padding-top: 27px;
+    padding-right: 4px;
     min-height: 180px;
     max-height: 300px;
     min-width: 280px;
     max-width: 300px;
     @include heading;
     @include center;
+    align-items: unset;
     background-color: $neutralColor-1;
     color: $neutralColor-4;
     position: relative;
