@@ -7,8 +7,6 @@
 }
 
 @mixin button-style {
-  margin-top: 2.5%;
-  padding: 1% 25px 2% 15px;
   height: 45px;
   min-width: 180px;
   max-width: 80%;
@@ -72,11 +70,15 @@
 
 @keyframes buttonMove {
   0% { top: -5px; left:  -5px; }
-  50% { top: -3px; left: -3px }
   100% { top: 0px; left: 0px; }
 }
 
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
+
+@keyframes fade {
+  from {background-color: #393939;}
+  to {background-color: #5bacc3;}
 }

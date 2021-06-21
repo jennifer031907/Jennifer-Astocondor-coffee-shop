@@ -12,13 +12,14 @@ body {
   margin: 0;
 }
 
-header, .main-product, .our-products__card__info, .footer, .hot-drinks {
+header, .main-product, .our-products__card__info, .footer, .hot-drinks, .pastries {
   background-color: $primaryColor-2;
 }
 
 a {
   text-decoration: none;
   color: $neutralColor-1;
+  cursor: pointer;
 }
 
 .nav {

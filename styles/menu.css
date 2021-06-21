@@ -3,10 +3,6 @@
     top: -5px;
     left: -5px;
   }
-  50% {
-    top: -3px;
-    left: -3px;
-  }
   100% {
     top: 0px;
     left: 0px;
@@ -17,10 +13,6 @@
   0% {
     top: -5px;
     left: -5px;
-  }
-  50% {
-    top: -3px;
-    left: -3px;
   }
   100% {
     top: 0px;
@@ -50,6 +42,24 @@
   }
 }
 
+@-webkit-keyframes fade {
+  from {
+    background-color: #393939;
+  }
+  to {
+    background-color: #5bacc3;
+  }
+}
+
+@keyframes fade {
+  from {
+    background-color: #393939;
+  }
+  to {
+    background-color: #5bacc3;
+  }
+}
+
 html {
   color: #393939;
   font-family: "Open Sans", sans-serif;
@@ -60,13 +70,14 @@ body {
   margin: 0;
 }
 
-header, .main-product, .our-products__card__info, .footer, .hot-drinks {
+header, .main-product, .our-products__card__info, .footer, .hot-drinks, .pastries {
   background-color: #FFF0ED;
 }
 
 a {
   text-decoration: none;
   color: #393939;
+  cursor: pointer;
 }
 
 .nav {
@@ -130,10 +141,6 @@ a {
     top: -5px;
     left: -5px;
   }
-  50% {
-    top: -3px;
-    left: -3px;
-  }
   100% {
     top: 0px;
     left: 0px;
@@ -148,6 +155,15 @@ a {
   100% {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
+  }
+}
+
+@keyframes fade {
+  from {
+    background-color: #393939;
+  }
+  to {
+    background-color: #5bacc3;
   }
 }
 
