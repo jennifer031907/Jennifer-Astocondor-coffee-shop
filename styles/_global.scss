@@ -50,11 +50,10 @@ a {
       @include navLink-button;
       list-style: none;
       
-      & a:hover {
+      &:last-child a {
         color: $primaryColor-1;
       }
     }
-
   }
 }
 

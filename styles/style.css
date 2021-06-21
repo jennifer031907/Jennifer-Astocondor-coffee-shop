@@ -126,7 +126,7 @@ a {
   list-style: none;
 }
 
-.nav__links__item a:hover {
+.nav__links__item:last-child a {
   color: #5BACC3;
 }
 
@@ -168,7 +168,7 @@ a {
 }
 
 button {
-  height: 45px;
+  height: 55px;
   min-width: 180px;
   max-width: 80%;
   color: #FFF;
@@ -184,7 +184,7 @@ button {
 button:after {
   top: -5px;
   left: -5px;
-  height: 42px;
+  height: 52px;
   width: 180px;
   content: "";
   outline: 2px solid #393939;
@@ -235,7 +235,8 @@ button:active {
 }
 
 .main-product__text__paragraph {
-  width: 41%;
+  margin: 5% 0;
+  width: 45%;
   font-size: 18px;
   font-weight: 400;
 }
@@ -346,8 +347,8 @@ button:active {
 }
 
 .our-products__card__info p {
-  font-size: 21px;
-  font-weight: 400;
+  font-size: 33px;
+  font-weight: 300;
   font-weight: bolder;
   color: #5BACC3;
 }
@@ -414,8 +415,11 @@ button:active {
 }
 
 .different__image {
+  margin: 0 auto;
   padding: 0 20px;
-  width: 40%;
+  height: 500px;
+  min-width: 400px;
+  max-width: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -425,14 +429,28 @@ button:active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+}
+
+.different__image::after {
+  top: -20px;
+  left: -20px;
+  height: 500px;
+  width: 500px;
+  content: "";
+  outline: 5px solid #5BACC3;
+  position: absolute;
 }
 
 .different__image__background {
+  height: 500px;
   min-width: 400px;
   max-width: 500px;
 }
 
 .different__image__coldbrew {
+  top: 18%;
+  left: 30%;
   position: absolute;
   background-color: transparent;
   z-index: 2;

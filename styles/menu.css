@@ -126,7 +126,7 @@ a {
   list-style: none;
 }
 
-.nav__links__item a:hover {
+.nav__links__item:last-child a {
   color: #5BACC3;
 }
 
@@ -230,6 +230,10 @@ li {
           align-items: center;
   background-color: #393939;
   color: #FFF;
+}
+
+.main-image__title::after {
+  outline: 5px solid #5BACC3;
 }
 
 .menu-navigation__list {

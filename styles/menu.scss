@@ -46,6 +46,11 @@ li {
     @include center;
     background-color: $neutralColor-1;
     color: $neutralColor-4;
+
+    &::after {
+
+      outline: 5px solid $primaryColor-1;
+    }
   }
 }
 

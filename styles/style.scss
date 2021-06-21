@@ -25,7 +25,8 @@ button {
         }
         
         &__paragraph {
-            width: 41%;
+            margin: 5% 0;
+            width: 45%;
             @include paragraphText;
         }
     }
@@ -88,8 +89,9 @@ button {
                     color: $neutralColor-2
                 }
             }
+
             & p {
-                @include navLink-button;
+                @include heading-nav-footer;
                 font-weight: bolder;
                 color: $primaryColor-1;
             }
@@ -130,16 +132,33 @@ button {
     }
 
     &__image {
+        margin: 0 auto;
         padding: $horizontalPadding;
-        width: 40%;
+        height: 500px;
+        min-width: 400px;
+        max-width: 500px;
         @include center;
+        position: relative;
+
+        &::after{
+            top: -20px;
+            left: -20px;
+            height: 500px;
+            width: 500px;
+            content: "";
+            outline: 5px solid $primaryColor-1;
+            position: absolute;
+        }
         
         &__background {
+            height: 500px;
             min-width: 400px;
             max-width: 500px;
         }
         
         &__coldbrew {
+            top: 18%;
+            left: 30%;
             position: absolute;
             background-color: transparent;
             z-index: 2;

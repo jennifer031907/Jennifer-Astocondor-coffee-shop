@@ -7,7 +7,7 @@
 }
 
 @mixin button-style {
-  height: 45px;
+  height: 55px;
   min-width: 180px;
   max-width: 80%;
   color: $neutralColor-4;
@@ -20,7 +20,7 @@
   &:after {
     top: -5px;
     left: -5px;
-    height: 42px;
+    height: 52px;
     width: 180px;
     content: "";
     outline: 2px solid $neutralColor-1;
